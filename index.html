@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Subhajit Bera</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2cd24f30c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="tag1" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="tag2" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi , I'm <br><span>Subhajit</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit cum, adipisci repellat
+                        harum perferendis, voluptatibus quisquam modi, et quibusdam architecto facilis?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C++(Proficient),Python, Java</li>
+                            <li><span>Databases</span><br>MySQL, MongoDB</li>
+                            <li><span>Frontend</span><br>HTML5, CSS3, Bootstrap,React,Pug template</li>
+                            <li><span>Backend</span><br>FastAPI, Node.js, Express.js,Laravel,inertia.js,php</li>
+                            <li><span>Problem Solving and Computer Science Fundamentals</span><br>Data Structures and
+                                Algorithms, Operating Systems, Database Management Systems, Object Oriented Programming
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> Add-Auto Technology Pvt. Ltd., Howrah, India: Embedded Systems and IOT
+                                    Intern</span><br>Worked on an android app to switch on and off LEDs along with a
+                                timer and implemented brightness control with Arduino and ESP8266.Worked on another
+                                android app to get data from a potentiometer using Arduino and ESP8266</li>
+                            <!-- <li><span>Android Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Machine Learning</span><br>Working on Sentiment Analysis on Amazon Fine Food
+                                Review Dataset to use the predicted probabilities to create new Score such as 4.5 in
+                                between a and 5 that would reduce the imbalance in the dataset as well improve the
+                                accuracy with CNN deep learning model.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Jadavpur University, Kolkata, West Bengal, India
+                                    [2021-2025(expected)]</span><br>B.E. (Civil Engineering) <br>SGPA: 8.03 </li>
+                            <li><span>St. Thomas’ Church School, Howrah, West Bengal, India</span><br>ICSE (Class X)
+                                [Year 2019]<br> 96.40% <br>ISC (Class XII) [Year 2021]<br> 97.25 % </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        I have developed a lot of websites over a variety of frontend and backend frameworks , deployed
+                        gorgeous websites with seamless integrations with backend and databases and have also
+                        authenticated
+                        users with password hashing and tokenization.
+                    </p>
+                    <p>
+                        <br>
+                        Please give a look at those interesting projects at my work section and do not forget to try
+                        them either through the hosted link or locally on your machine.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Android Developement</h2>
+                    <p>
+                        Developed applications with Java and Flutter on Android Studio.An app on IOT integrated with
+                        firebase for OTP verification.The timer controlled app can turn lights on and off once a
+                        specific time is set.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        Working on Sentiment Analysis on Amazon Fine Food Review Dataset to use the predicted
+                        probabilities to create new Score such as 4.5 in between 4 and 5 that would reduce the imbalance
+                        in the dataset as well improve the accuracy with CNN deep learning model.
+                    </p>
+                    <p>
+                        <br>
+                        I am working on this project under Dept. of Computer Science and Engineering , Jadavpur
+                        University
+                    </p>
+                    <p>
+                        <br>
+                        Feel free to contact me if you have any interesting project with you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------portfolio------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">
+                My work
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.webp" alt="">
+                    <div class="layer">
+                        <h3>CChat</h3>
+                        <p>
+                            A scalable chat application using node.js and socket.io
+                            Just enter your name and join. You will get notified when others join and start
+                            chatting.You'll also get notified when someone leaves the chat. That's it.
+                            A few bugs are there.Hope to correct it someday in future.
+                            Tech stack used:
+                            Socket.io Node.js CSS3 HTML5
+                        </p>
+                        <a href="https://github.com/mecivil/CChat"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.webp" alt="">
+                    <div class="layer">
+                        <h3>Dance Website</h3>
+                        <p>
+                            A fully responsive Dance institution website on node.js integrated with mongodb atlas.
+                            A screenshot of the home page is shown below:- A simple clean website.
+                            The user details entered in the Contact us page are stored in MongoDB Atlas.
+                            Tech Stack used:
+                            NodeJS Javascript HTML5 CSS3 MongoDB Pug
+                        </p>
+                        <a href="https://github.com/mecivil/Dance_website"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.webp" alt="">
+                    <div class="layer">
+                        <h3>FARM Stack Task Manager</h3>
+                        <p>
+                            FARM stack frontend application that allows a user to perform CRUD operations on MongoDB
+                            Atlas only after succesfull authentication and token generation.FASTAPI Backend server with
+                            authentication for CRUD Operations on MongoDB Atlas where passwords are stored safely in
+                            hashed format.
+                        </p>
+                        <a href="https://github.com/mecivil/farmstack_frontend"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/mecivil/fastapi_backend"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work3.webp" alt="">
+                    <div class="layer">
+                        <h3>Flutter World Time App</h3>
+                        <p>
+                            A basic flutter application that tells the current time of a few countries across the
+                            world.The link for the android apk is given.
+                        </p>
+                        <a href="https://github.com/mecivil/flutter_world_time_app"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.webp" alt="">
+                    <div class="layer">
+                        <h3>FARM Stack Task Manager</h3>
+                        <p>
+                            FARM stack frontend application that allows a user to perform CRUD operations on MongoDB
+                            Atlas only after succesfull authentication and token generation.FASTAPI Backend server with
+                            authentication for CRUD Operations on MongoDB Atlas where passwords are stored safely in
+                            hashed format.
+                        </p>
+                        <a href="https://github.com/mecivil/farmstack_frontend"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/mecivil/fastapi_backend"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.webp" alt="">
+                    <div class="layer">
+                        <h3>Project Manager app</h3>
+                        <p>
+                            This is a Laravel 11 React Inertia app using Laravel Breeze as the starter kit. At the
+                            backend php and MySQL databases are used. The frontend is handled by react. The inertia acts
+                            as a glue between the frontend and the backend.
+                        </p>
+                        <a href="https://github.com/mecivil/laravel_react"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------contact------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>subhajitbera2021@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9330531366</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/subhajit-bera-425697227"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://t.me/bera_subhajit"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1OnMQ8XYQe6HnTnEIwZ5NCzas4eGO9w9V/edit?usp=drive_link&ouid=111526531348893146856&rtpof=true&sd=true"
+                        class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows='6' placeholder="Your Message" style="resize:vertical"
+                            required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Subhajit Bera <br>All images are copyright to their respective owners</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOY2rmmXe8o6ghImVPPU7CQBpdFJxSf4Xjo1gluqtIoZfFVSUhwVmBjaPK3mbiUxOm/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "An error occurred.Please try again after sometime.";
+                    msg.style.color = "#f40606";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset();
+                })
+        })
+
+    </script>
+</body>
+
+</html>
